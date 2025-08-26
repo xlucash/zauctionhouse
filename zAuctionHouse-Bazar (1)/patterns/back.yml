@@ -1,0 +1,19 @@
+#
+# This configuration uses zMenu, please refer to zMenu documentation
+# zMenu: https://docs.zmenu.dev/
+# zAuctionHouse: https://zauctionhouse.groupez.dev/
+#
+
+name: "zauctionhouse_back" # Name of the pattern
+size: 54
+items:
+  playerHead:
+    isPermanent: true
+    type: BACK
+    item:
+      material: BARRIER
+      name: "&cBack"
+      lore:
+        - ''
+        - "&eClick to go back!"
+    slot: 50

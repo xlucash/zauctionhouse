@@ -1,0 +1,131 @@
+name: "zauctionhouse_categories"
+size: 54
+items:
+  weapons:
+    slot: 0
+    type: ZAUCTIONHOUSE_CATEGORIES
+    category: weapons
+    isPermanent: true
+    actions:
+      - type: data
+        action: SET
+        key: "zauctionhouse_material"
+        value: "ORANGE_STAINED_GLASS_PANE"
+    item:
+      material: GOLDEN_SWORD
+      flags:
+        - HIDE_ATTRIBUTES
+      name: "&6Weapons"
+      lore:
+        - "&8Category"
+        - ""
+        - "&7Examples:"
+        - "&8• &7Swords"
+        - "&8• &7Bows"
+        - "&8• &7Axes"
+        - ""
+        - "&eClick to view items!"
+  armors:
+    slot: 9
+    type: ZAUCTIONHOUSE_CATEGORIES
+    category: armors
+    isPermanent: true
+    actions:
+      - type: data
+        action: SET
+        key: "zauctionhouse_material"
+        value: "LIGHT_BLUE_STAINED_GLASS_PANE"
+    item:
+      material: DIAMOND_CHESTPLATE
+      flags:
+        - HIDE_ATTRIBUTES
+      name: "&bArmor"
+      lore:
+        - "&8Category"
+        - ""
+        - "&7Examples:"
+        - "&8• &7Hat"
+        - "&8• &7Chestplate"
+        - "&8• &7Leggings"
+        - "&8• &7Boots"
+        - ""
+        - "&eClick to view items!"
+  consumables:
+    slot: 18
+    type: ZAUCTIONHOUSE_CATEGORIES
+    category: foods
+    isPermanent: true
+    actions:
+      - type: data
+        action: SET
+        key: "zauctionhouse_material"
+        value: "RED_STAINED_GLASS_PANE"
+    item:
+      material: APPLE
+      name: "&cConsumables"
+      lore:
+        - "&8Category"
+        - ""
+        - "&7Examples:"
+        - "&8• &7Potions"
+        - "&8• &7Food"
+        - "&8• &7Books"
+        - ""
+        - "&eClick to view items!"
+  blocks:
+    slot: 27
+    type: ZAUCTIONHOUSE_CATEGORIES
+    category: blocks
+    isPermanent: true
+    actions:
+      - type: data
+        action: SET
+        key: "zauctionhouse_material"
+        value: "YELLOW_STAINED_GLASS_PANE"
+    item:
+      material: COBBLESTONE
+      name: "&eBlocks"
+      lore:
+        - "&8Category"
+        - ""
+        - "&7Examples:"
+        - "&8• &7Dirt"
+        - "&8• &7Stone"
+        - "&8• &7Any blocks really"
+        - ""
+        - "&eClick to view items!"
+  mics:
+    slot: 36
+    type: ZAUCTIONHOUSE_CATEGORIES
+    category: misc
+    isPermanent: true
+    actions:
+      - type: data
+        action: SET
+        key: "zauctionhouse_material"
+        value: "PINK_STAINED_GLASS_PANE"
+    item:
+      material: STICK
+      name: "&dTools & Misc"
+      lore:
+        - "&8Category"
+        - ""
+        - "&7Examples:"
+        - "&8• &7Tools"
+        - "&8• &7Special"
+        - "&8• &7Other items"
+        - ""
+        - "&eClick to view items!"
+  auctions:
+    slot: 45
+    type: INVENTORY
+    plugin: "zAuctionHouseV3"
+    inventory: "auction"
+    isPermanent: true
+    item:
+      material: NETHER_STAR
+      name: "&7Auction"
+      lore:
+        - "&8Auction browser"
+        - ""
+        - "&eClick to view items!"

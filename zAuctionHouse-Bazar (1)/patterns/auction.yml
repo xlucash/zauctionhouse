@@ -1,0 +1,99 @@
+#
+# This configuration uses zMenu, please refer to zMenu documentation
+# zMenu: https://docs.zmenu.dev/
+# zAuctionHouse: https://zauctionhouse.groupez.dev/
+#
+
+name: 'zauctionhouse_auction' # Name of the pattern
+size: 54
+items:
+
+  expireItems:
+    type: INVENTORY
+    plugin: zAuctionHouseV3
+    inventory: expire
+    slot: 52
+    isPermanent: true
+    item:
+      material: CHEST
+      name: '&aExpired Items'
+      lore:
+        - ''
+        - '&eClick to open!'
+
+  buyItem:
+    type: INVENTORY
+    plugin: zAuctionHouseV3
+    inventory: buying
+    slot: 51
+    isPermanent: true
+    item:
+      material: ENDER_CHEST
+      name: '&aBought Items'
+      lore:
+        - ''
+        - '&eClick to open!'
+
+  change_sort:
+    isPermanent: true
+    type: ZAUCTIONHOUSE_CHANGE_SORT
+    slot: 50
+    item:
+      material: HOPPER
+      name: '&aSort'
+      lore:
+        - ''
+        - '&b➡ ᴅᴇᴄʀᴇᴀsɪɴɢ ᴅᴀᴛᴇ'
+        - '   &7ᴅᴇᴄʀᴇᴀsɪɴɢ ᴘʀɪᴄᴇ'
+        - '   &7ᴀsᴄᴇɴᴅɪɴɢ ᴅᴀᴛᴇ'
+        - '   &7ᴀsᴄᴇɴᴅɪɴɢ ᴘʀɪᴄᴇ'
+        - ''
+        - '&eClick to switch sort!'
+    placeholder: '%zauctionhouse_sorting_type%'
+    value: 'DECREASING_DATE'
+    action: EQUALS_STRING
+    else:
+      type: ZAUCTIONHOUSE_CHANGE_SORT
+      item:
+        material: HOPPER
+        name: '&aSort'
+        lore:
+          - ''
+          - '   &7ᴅᴇᴄʀᴇᴀsɪɴɢ ᴅᴀᴛᴇ'
+          - '&b➡ ᴅᴇᴄʀᴇᴀsɪɴɢ ᴘʀɪᴄᴇ'
+          - '   &7ᴀsᴄᴇɴᴅɪɴɢ ᴅᴀᴛᴇ'
+          - '   &7ᴀsᴄᴇɴᴅɪɴɢ ᴘʀɪᴄᴇ'
+          - ''
+          - '&eClick to switch sort!'
+      placeholder: '%zauctionhouse_sorting_type%'
+      value: 'DECREASING_PRICE'
+      action: EQUALS_STRING
+      else:
+        type: ZAUCTIONHOUSE_CHANGE_SORT
+        item:
+          material: HOPPER
+          name: '&aSort'
+          lore:
+            - ''
+            - '   &7ᴅᴇᴄʀᴇᴀsɪɴɢ ᴅᴀᴛᴇ'
+            - '   &7ᴅᴇᴄʀᴇᴀsɪɴɢ ᴘʀɪᴄᴇ'
+            - '&b➡ ᴀsᴄᴇɴᴅɪɴɢ ᴅᴀᴛᴇ'
+            - '   &7ᴀsᴄᴇɴᴅɪɴɢ ᴘʀɪᴄᴇ'
+            - ''
+            - '&eClick to switch sort!'
+        placeholder: '%zauctionhouse_sorting_type%'
+        value: 'ASCENDING_DATE'
+        action: EQUALS_STRING
+        else:
+          type: ZAUCTIONHOUSE_CHANGE_SORT
+          item:
+            material: HOPPER
+            name: '&aSort'
+            lore:
+              - ''
+              - '   &7ᴅᴇᴄʀᴇᴀsɪɴɢ ᴅᴀᴛᴇ'
+              - '   &7ᴅᴇᴄʀᴇᴀsɪɴɢ ᴘʀɪᴄᴇ'
+              - '   &7ᴀsᴄᴇɴᴅɪɴɢ ᴅᴀᴛᴇ'
+              - '&b➡ ᴀsᴄᴇɴᴅɪɴɢ ᴘʀɪᴄᴇ'
+              - ''
+              - '&eClick to switch sort!'

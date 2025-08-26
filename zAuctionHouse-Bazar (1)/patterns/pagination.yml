@@ -1,0 +1,34 @@
+#
+# This configuration uses zMenu, please refer to zMenu documentation
+# zMenu: https://docs.zmenu.dev/
+# zAuctionHouse: https://zauctionhouse.groupez.dev/
+#
+
+name: "zauctionhouse_pagination" # Name of the pattern
+size: 54
+items:
+  previous:
+    isPermanent: true
+    type: PREVIOUS
+    slot: 46
+    item:
+      material: ARROW
+      name: "&aPrevious Page"
+      lore:
+        - "&7(%zmenu_player_page%/%zmenu_player_max_page%&7)"
+        - ""
+        - "&bRight-Click to skip!"
+        - "&eClick to turn page!"
+
+  next:
+    isPermanent: true
+    type: NEXT
+    slot: 53
+    item:
+      material: ARROW
+      name: "&aNext Page"
+      lore:
+        - "&7(%zmenu_player_page%/%zmenu_player_max_page%&7)"
+        - ""
+        - "&bRight-Click to skip!"
+        - "&eClick to turn page!"

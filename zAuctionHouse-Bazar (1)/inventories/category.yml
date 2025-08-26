@@ -1,0 +1,25 @@
+#
+# This configuration uses zMenu, please refer to zMenu documentation
+# zMenu: https://docs.zmenu.dev/
+# zAuctionHouse: https://zauctionhouse.groupez.dev/
+#
+
+name: '&8%zauctionhouse_category% &8(&f%page%&8/&f%maxPage%&8)'
+
+size: 54
+
+patterns:
+  - "zauctionhouse_decoration"
+  - "zauctionhouse_auction"
+  - "zauctionhouse_pagination"
+  - "zauctionhouse_categories"
+
+items:
+  auctionItems:
+    type: ZAUCTIONHOUSE_CATEGORY
+    isPermanent: true
+    slots:
+      - 11-16
+      - 20-25
+      - 29-34
+      - 38-43

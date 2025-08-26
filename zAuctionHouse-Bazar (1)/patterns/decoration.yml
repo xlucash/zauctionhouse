@@ -1,0 +1,25 @@
+#
+# This configuration uses zMenu, please refer to zMenu documentation
+# zMenu: https://docs.zmenu.dev/
+# zAuctionHouse: https://zauctionhouse.groupez.dev/
+#
+
+name: "zauctionhouse_decoration" # Name of the pattern
+size: 54
+items:
+  decorations:
+    isPermanent: true
+    item:
+      material: "%zmenu_player_value_zauctionhouse_material%"
+      name: "&e"
+    slots:
+      - 1-8
+      - 10
+      - 17
+      - 19
+      - 26
+      - 28
+      - 35
+      - 37
+      - 44
+      - 46-53
