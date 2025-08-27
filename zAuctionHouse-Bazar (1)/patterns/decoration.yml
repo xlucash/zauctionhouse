@@ -13,13 +13,8 @@ items:
       material: "%zmenu_player_value_zauctionhouse_material%"
       name: "&e"
     slots:
-      - 1-8
+      - 1
       - 10
-      - 17
       - 19
-      - 26
       - 28
-      - 35
-      - 37
-      - 44
-      - 46-53
+      - 36-44

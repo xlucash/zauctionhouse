@@ -4,7 +4,7 @@
 # zAuctionHouse: https://zauctionhouse.groupez.dev/
 #
 
-name: '&8ᴀᴜᴄᴛɪᴏɴ &8(&f%page%&8/&f%maxPage%&8)'  # Title of the menu, supports color codes and placeholders
+name: '&8Aukcje &8(&f%page%&8/&f%maxPage%&8)'  # Title of the menu, supports color codes and placeholders
 
 size: 54  # Size of the Minecraft inventory menu, must be a multiple of 9
 
@@ -26,7 +26,7 @@ items:
     type: ZAUCTIONHOUSE_AUCTION
     isPermanent: true
     slots:
-      - 11-16
-      - 20-25
-      - 29-34
-      - 38-43
+      - 2-8
+      - 11-17
+      - 20-26
+      - 29-35
