@@ -12,8 +12,8 @@ items:
     type: BACK
     item:
       material: BARRIER
-      name: "&cBack"
+      name: "&cPowrót"
       lore:
         - ''
-        - "&eClick to go back!"
+        - "&eKliknij, aby wrócić!"
     slot: 50

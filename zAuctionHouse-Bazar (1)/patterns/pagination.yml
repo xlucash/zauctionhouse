@@ -13,12 +13,12 @@ items:
     slot: 46
     item:
       material: ARROW
-      name: "&aPrevious Page"
+      name: "&aPoprzednia strona"
       lore:
         - "&7(%zmenu_player_page%/%zmenu_player_max_page%&7)"
         - ""
-        - "&bRight-Click to skip!"
-        - "&eClick to turn page!"
+        - "&bPPM, aby przeskoczyć!"
+        - "&eKliknij, aby cofnąć stronę!"
 
   next:
     isPermanent: true
@@ -26,9 +26,9 @@ items:
     slot: 53
     item:
       material: ARROW
-      name: "&aNext Page"
+      name: "&aNastępna strona"
       lore:
         - "&7(%zmenu_player_page%/%zmenu_player_max_page%&7)"
         - ""
-        - "&bRight-Click to skip!"
-        - "&eClick to turn page!"
+        - "&bPPM, aby przeskoczyć!"
+        - "&eKliknij, aby przejść dalej!"

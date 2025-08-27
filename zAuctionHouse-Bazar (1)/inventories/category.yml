@@ -19,7 +19,7 @@ items:
     type: ZAUCTIONHOUSE_CATEGORY
     isPermanent: true
     slots:
-      - 11-16
-      - 20-25
-      - 29-34
-      - 38-43
+      - 2-8
+      - 11-17
+      - 20-26
+      - 29-35
