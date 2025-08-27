@@ -12,43 +12,30 @@ items:
     type: INVENTORY
     plugin: zAuctionHouseV3
     inventory: expire
-    slot: 52
+    slot: 45
     isPermanent: true
     item:
       material: CHEST
-      name: '&aExpired Items'
+      name: '&aWygasłe przedmioty'
       lore:
         - ''
-        - '&eClick to open!'
-
-  buyItem:
-    type: INVENTORY
-    plugin: zAuctionHouseV3
-    inventory: buying
-    slot: 51
-    isPermanent: true
-    item:
-      material: ENDER_CHEST
-      name: '&aBought Items'
-      lore:
-        - ''
-        - '&eClick to open!'
+        - '&eKliknij, aby otworzyć!'
 
   change_sort:
     isPermanent: true
     type: ZAUCTIONHOUSE_CHANGE_SORT
-    slot: 50
+    slot: 52
     item:
       material: HOPPER
-      name: '&aSort'
+      name: '&aSortowanie'
       lore:
         - ''
-        - '&b➡ ᴅᴇᴄʀᴇᴀsɪɴɢ ᴅᴀᴛᴇ'
-        - '   &7ᴅᴇᴄʀᴇᴀsɪɴɢ ᴘʀɪᴄᴇ'
-        - '   &7ᴀsᴄᴇɴᴅɪɴɢ ᴅᴀᴛᴇ'
-        - '   &7ᴀsᴄᴇɴᴅɪɴɢ ᴘʀɪᴄᴇ'
+        - '&b➡ malejąco: data'
+        - '   &7malejąco: cena'
+        - '   &7rosnąco: data'
+        - '   &7rosnąco: cena'
         - ''
-        - '&eClick to switch sort!'
+        - '&eKliknij, aby zmienić sortowanie!'
     placeholder: '%zauctionhouse_sorting_type%'
     value: 'DECREASING_DATE'
     action: EQUALS_STRING
@@ -56,15 +43,15 @@ items:
       type: ZAUCTIONHOUSE_CHANGE_SORT
       item:
         material: HOPPER
-        name: '&aSort'
+        name: '&aSortowanie'
         lore:
           - ''
-          - '   &7ᴅᴇᴄʀᴇᴀsɪɴɢ ᴅᴀᴛᴇ'
-          - '&b➡ ᴅᴇᴄʀᴇᴀsɪɴɢ ᴘʀɪᴄᴇ'
-          - '   &7ᴀsᴄᴇɴᴅɪɴɢ ᴅᴀᴛᴇ'
-          - '   &7ᴀsᴄᴇɴᴅɪɴɢ ᴘʀɪᴄᴇ'
+          - '   &7malejąco: data'
+          - '&b➡ malejąco: cena'
+          - '   &7rosnąco: data'
+          - '   &7rosnąco: cena'
           - ''
-          - '&eClick to switch sort!'
+          - '&eKliknij, aby zmienić sortowanie!'
       placeholder: '%zauctionhouse_sorting_type%'
       value: 'DECREASING_PRICE'
       action: EQUALS_STRING
@@ -72,15 +59,15 @@ items:
         type: ZAUCTIONHOUSE_CHANGE_SORT
         item:
           material: HOPPER
-          name: '&aSort'
+          name: '&aSortowanie'
           lore:
             - ''
-            - '   &7ᴅᴇᴄʀᴇᴀsɪɴɢ ᴅᴀᴛᴇ'
-            - '   &7ᴅᴇᴄʀᴇᴀsɪɴɢ ᴘʀɪᴄᴇ'
-            - '&b➡ ᴀsᴄᴇɴᴅɪɴɢ ᴅᴀᴛᴇ'
-            - '   &7ᴀsᴄᴇɴᴅɪɴɢ ᴘʀɪᴄᴇ'
+            - '   &7malejąco: data'
+            - '   &7malejąco: cena'
+            - '&b➡ rosnąco: data'
+            - '   &7rosnąco: cena'
             - ''
-            - '&eClick to switch sort!'
+            - '&eKliknij, aby zmienić sortowanie!'
         placeholder: '%zauctionhouse_sorting_type%'
         value: 'ASCENDING_DATE'
         action: EQUALS_STRING
@@ -88,12 +75,42 @@ items:
           type: ZAUCTIONHOUSE_CHANGE_SORT
           item:
             material: HOPPER
-            name: '&aSort'
+            name: '&aSortowanie'
             lore:
               - ''
-              - '   &7ᴅᴇᴄʀᴇᴀsɪɴɢ ᴅᴀᴛᴇ'
-              - '   &7ᴅᴇᴄʀᴇᴀsɪɴɢ ᴘʀɪᴄᴇ'
-              - '   &7ᴀsᴄᴇɴᴅɪɴɢ ᴅᴀᴛᴇ'
-              - '&b➡ ᴀsᴄᴇɴᴅɪɴɢ ᴘʀɪᴄᴇ'
+              - '   &7malejąco: data'
+              - '   &7malejąco: cena'
+              - '   &7rosnąco: data'
+              - '&b➡ rosnąco: cena'
               - ''
-              - '&eClick to switch sort!'
+              - '&eKliknij, aby zmienić sortowanie!'
+          placeholder: '%zauctionhouse_sorting_type%'
+          value: 'ASCENDING_PRICE'
+          action: EQUALS_STRING
+          else:
+            type: ZAUCTIONHOUSE_CHANGE_SORT
+            slot: 52
+            item:
+              material: HOPPER
+              name: '&aSortowanie'
+              lore:
+                - ''
+                - '&b➡ malejąco: data'
+                - '   &7malejąco: cena'
+                - '   &7rosnąco: data'
+                - '   &7rosnąco: cena'
+                - ''
+                - '&eKliknij, aby zmienić sortowanie!'
+            placeholder: '%zauctionhouse_sorting_type%'
+            value: 'DECREASING_DATE'
+            action: EQUALS_STRING
+
+  howToSell:
+    slot: 49
+    isPermanent: true
+    item:
+      material: BOOK
+      name: '&aJak wystawić przedmiot?'
+      lore:
+        - '&7Trzymaj przedmiot w ręku'
+        - '&7i użyj komendy &e/ah sell <cena>'
